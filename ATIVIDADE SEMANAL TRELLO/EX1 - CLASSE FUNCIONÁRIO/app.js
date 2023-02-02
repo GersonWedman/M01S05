@@ -1,16 +1,17 @@
 import Funcionario from './Funcionario.js';
 
+//criação instancia funcionário (ada)
 const ada = new Funcionario('023.266.940-66', 'Ada Lovelace', 1000);
-
+//confirmar salário inicial armazenado
 console.log(ada.salario); //1000
-
+//promover (dar aumento de salário) ao funcionário
 ada.promover(50);
-
+//verificar se o aumento foi aplicado corretamente
 console.log(ada.salario); //1500
-
+//verificar se armazenou nome completo
 console.log(ada.nomeCompleto);
-
-//console.log(ada.cpf);
+//imprimir o cpf armazenado
+console.log(ada.cpf);
 
 // FUNÇÃO QUE REALIZA VALIDAÇÃO DE CPF
 function _cpf(cpf) {
@@ -54,5 +55,8 @@ function validarCPF(valor) {
     console.log('CPF Válido');
   }
 }
-
+//realizar a validação do cpf - função que retorna o alert chamará a função que faz a validação matemática.
 validarCPF(ada.cpf);
+//validar se cpf ainda está armazenado corretamente
+console.log(ada.cpf);
+//EX1 - concluído-------------------------------------------------------
