@@ -42,7 +42,10 @@ export default class Fatura {
     }
   }
   //método obterValorTotal que retornará o valor da fatura por item.
-  get obterValorTotal() {
+  obterValorTotal() {
+    return this.quantia * this.preco;
+  }
+  get valorTotal() {
     return this.quantia * this.preco;
   }
 }
